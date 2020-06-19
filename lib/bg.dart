@@ -6,6 +6,8 @@ class BgImage extends StatelessWidget {
     return Image.asset(
                   "assets/hector-martinez-EG49vTtKdvI-unsplash.jpg",
                   fit: BoxFit.cover,
+                  color: Colors.black.withOpacity(0.6),
+                  colorBlendMode: BlendMode.darken,
                   );
   }
 }
