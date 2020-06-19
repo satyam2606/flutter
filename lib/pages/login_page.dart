@@ -1,4 +1,6 @@
 import 'package:Myapp/bg.dart';
+import 'package:Myapp/utils/Constants.dart';
+//import 'package:Myapp/utils/Constants.dart';
 //import 'package:Myapp/pages/home_page.dart';
 import "package:flutter/material.dart";
 
@@ -54,7 +56,10 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                             RaisedButton(onPressed: () {
                             //   Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage() ));
-                             Navigator.pushNamed(context, "/home");
+                            Constants.prefs.setBool("loggedIn", true);
+                            
+
+                             Navigator.pushReplacementNamed(context, "/home");
                              },
                             
                             child: Text("Sign in"),
