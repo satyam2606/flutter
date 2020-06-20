@@ -1,5 +1,6 @@
-import 'package:Myapp/bg.dart';
+//import 'package:Myapp/bg.dart';
 import 'package:Myapp/utils/Constants.dart';
+import 'package:Myapp/widgets/bg.dart';
 //import 'package:Myapp/utils/Constants.dart';
 //import 'package:Myapp/pages/home_page.dart';
 import "package:flutter/material.dart";

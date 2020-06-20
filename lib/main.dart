@@ -2,6 +2,7 @@
 //import 'package:Myapp/drawer.dart';
 //import 'package:Myapp/pages/home_page.dart';
 import 'package:Myapp/pages/home_page.dart';
+import 'package:Myapp/pages/home_page_with_fb.dart';
 import 'package:Myapp/pages/login_page.dart';
 import 'package:Myapp/utils/Constants.dart';
 import 'package:flutter/cupertino.dart';
@@ -18,11 +19,12 @@ Future main() async {
     debugShowCheckedModeBanner: false,
     title:"Awesome App",
     home: Constants.prefs.getBool("loggedIn")==true
-    ? HomePage()
+    ? HomePageFB()
     : LoginPage(),
     theme: ThemeData(
       primarySwatch: Colors.purple,
     ),
+    
     routes: {
       "/login":(context)=>LoginPage(),
       "/home":(context)=>HomePage(),
